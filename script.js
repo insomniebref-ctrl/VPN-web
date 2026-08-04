@@ -8,12 +8,21 @@ function changerVPN() {
     vpnActif = !vpnActif;
 
     if (vpnActif) {
+
         etat.textContent = "🟢 Protection VPN activée";
+
         bouton.textContent = "Désactiver VPN";
-    } 
-    else {
+
+        bouton.style.background = "#16a34a";
+
+    } else {
+
         etat.textContent = "🔴 Protection VPN désactivée";
+
         bouton.textContent = "Activer VPN";
+
+        bouton.style.background = "#0284c7";
+
     }
 
 }
