@@ -14,7 +14,6 @@
 
 <body>
 
-
 <nav>
 
 <h1>🔒 VPN-Web</h1>
@@ -24,43 +23,54 @@
 </nav>
 
 
-
 <section class="dashboard">
 
 
-<h2>Tableau de bord VPN</h2>
+<h2>Tableau de bord</h2>
+
+<p>Bienvenue sur votre espace sécurisé</p>
 
 
-<div class="status">
+<div class="panel">
 
-<h3>État de protection</h3>
+<h3>🟢 Statut VPN</h3>
 
-<p id="etat">🔴 Protection désactivée</p>
+<p id="etat">
+Connexion sécurisée active
+</p>
 
 
-<button onclick="activerVPN()">
-Activer VPN
+<button onclick="desactiverVPN()">
+Désactiver VPN
 </button>
 
 </div>
 
 
 
-<div class="serveur">
+<div class="panel">
 
-<h3>Serveur connecté</h3>
+<h3>🌍 Serveur</h3>
 
-<p>🌍 France - Paris</p>
+<p>
+🇫🇷 France - Paris
+</p>
 
 </div>
 
 
 
-<div class="data">
+<div class="panel">
 
-<h3>Données protégées</h3>
+<h3>🛡️ Protection</h3>
 
-<p>🛡️ 0 Mo actuellement</p>
+<p>
+Collecte de données bloquée
+</p>
+
+<p>
+Données protégées : 245 Mo
+</p>
 
 </div>
 
@@ -70,7 +80,6 @@ Activer VPN
 
 
 <script src="script.js"></script>
-
 
 </body>
 
