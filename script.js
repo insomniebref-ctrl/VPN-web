@@ -1,11 +1,20 @@
-const bouton = document.querySelector("button");
+function activerVPN() {
 
-bouton.addEventListener("click", function() {
+    let etat = document.getElementById("etat");
 
-    bouton.innerHTML = "🛡️ Protection activée";
+    if (etat) {
+        etat.innerHTML = "🟢 Protection VPN activée";
+    }
 
-    bouton.style.background = "#16a34a";
+}
 
-    alert("VPN-Web protège maintenant votre navigation 🔒");
 
-});
+function desactiverVPN() {
+
+    let etat = document.getElementById("etat");
+
+    if (etat) {
+        etat.innerHTML = "🔴 Protection VPN désactivée";
+    }
+
+}
