@@ -1,20 +1,28 @@
-function activerVPN() {
+let vpnActif = false;
 
-    let etat = document.getElementById("etat");
 
-    if (etat) {
+function changerVPN() {
+
+    const etat = document.getElementById("etat");
+    const bouton = document.getElementById("vpnButton");
+
+
+    if (vpnActif === false) {
+
+        vpnActif = true;
+
         etat.innerHTML = "🟢 Protection VPN activée";
-    }
 
-}
+        bouton.innerHTML = "Désactiver VPN";
 
+    } else {
 
-function desactiverVPN() {
+        vpnActif = false;
 
-    let etat = document.getElementById("etat");
-
-    if (etat) {
         etat.innerHTML = "🔴 Protection VPN désactivée";
+
+        bouton.innerHTML = "Activer VPN";
+
     }
 
 }
