@@ -1,38 +1,24 @@
-let vpnActif = false;
+document.addEventListener("DOMContentLoaded", function () {
 
+    let bouton = document.getElementById("vpnButton");
+    let etat = document.getElementById("etat");
 
-const bouton = document.getElementById("vpnButton");
-const etat = document.getElementById("etat");
+    let actif = false;
 
+    bouton.addEventListener("click", function () {
 
-if (bouton) {
+        actif = !actif;
 
-    bouton.addEventListener("click", function() {
-
-
-        vpnActif = !vpnActif;
-
-
-        if (vpnActif) {
-
+        if (actif) {
             etat.innerHTML = "🟢 VPN activé";
-
             bouton.innerHTML = "Désactiver VPN";
-
-            bouton.style.background = "#16a34a";
-
-
+            bouton.style.background = "green";
         } else {
-
             etat.innerHTML = "🔴 VPN désactivé";
-
             bouton.innerHTML = "Activer VPN";
-
             bouton.style.background = "#0284c7";
-
         }
-
 
     });
 
-}
+});
